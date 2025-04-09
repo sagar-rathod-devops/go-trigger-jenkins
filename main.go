@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var rows int
-	fmt.Print("Enter number of rows: ")
-	fmt.Scanln(&rows)
+	var rows int = 5 // Number of rows for the pyramid
+	// fmt.Print("Enter number of rows: ")
+	// fmt.Scanln(&rows)
 
 	for i := 1; i <= rows; i++ {
 		// Print leading spaces
