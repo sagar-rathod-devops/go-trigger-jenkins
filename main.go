@@ -3,5 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("go-trigger-jenkins")
+	var rows int
+	fmt.Print("Enter number of rows: ")
+	fmt.Scanln(&rows)
+
+	for i := 1; i <= rows; i++ {
+		// Print leading spaces
+		for j := 1; j <= rows-i; j++ {
+			fmt.Print(" ")
+		}
+		// Print stars
+		for k := 1; k <= 2*i-1; k++ {
+			fmt.Print("*")
+		}
+		// New line after each row
+		fmt.Println()
+	}
 }
